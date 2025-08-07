@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Davis J Alappat - Personal Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827; /* Dark blue-gray background */
+            color: #E5E7EB; /* Light gray text */
+        }
+        .glassmorphism {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .accent-color {
+            color: #38bdf8; /* Sky blue accent */
+        }
+        .btn-primary {
+            background-color: #38bdf8;
+            color: #111827;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 20px rgba(56, 189, 248, 0.3);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header / Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 glassmorphism">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-white">Davis J Alappat</a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#about" class="hover:text-sky-400 transition-colors duration-300">About</a>
+                <a href="#experience" class="hover:text-sky-400 transition-colors duration-300">Experience</a>
+                <a href="#projects" class="hover:text-sky-400 transition-colors duration-300">Projects</a>
+                <a href="#contact" class="hover:text-sky-400 transition-colors duration-300">Contact</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="#about" class="block py-2 px-6 text-sm hover:bg-gray-700">About</a>
+            <a href="#experience" class="block py-2 px-6 text-sm hover:bg-gray-700">Experience</a>
+            <a href="#projects" class="block py-2 px-6 text-sm hover:bg-gray-700">Projects</a>
+            <a href="#contact" class="block py-2 px-6 text-sm hover:bg-gray-700">Contact</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 pt-24 md:pt-32">
+        <!-- Hero Section -->
+        <section id="hero" class="text-center py-20">
+            <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight">
+                Hi, I'm <span class="accent-color">Davis J Alappat</span>
+            </h1>
+            <p class="mt-4 text-xl md:text-2xl text-gray-300">Academic Associate & Economics Researcher</p>
+            <p class="mt-6 max-w-3xl mx-auto text-gray-400">
+                I am an Academic Associate at IIM Bangalore with a focus on how trade, structural reforms, and technological change shape labour markets and development outcomes. My work combines field research and survey design with quantitative analysis in R, Python, and Stata.
+            </p>
+            <div class="mt-8 flex justify-center gap-4">
+                <a href="#contact" class="btn-primary font-bold py-3 px-6 rounded-lg">Get In Touch</a>
+                <a href="#" class="bg-gray-700 text-white font-bold py-3 px-6 rounded-lg hover:bg-gray-600 transition-colors duration-300">View My CV</a>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="py-20">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-white">
+                About <span class="accent-color">Me</span>
+            </h2>
+            <div class="mt-12 flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/3">
+                    <!-- You can replace this placeholder with a URL to your actual photo -->
+                    <img src="https://placehold.co/400x400/1f2937/38bdf8?text=Davis\nAlappat" alt="Davis J Alappat" class="rounded-full mx-auto w-64 h-64 md:w-full md:h-auto object-cover border-4 border-sky-400 shadow-lg">
+                </div>
+                <div class="md:w-2/3">
+                    <p class="text-gray-300 leading-relaxed">
+                        I am currently an Academic Associate at the Indian Institute of Management Bangalore, with research experience at the University of Hyderabad, NIUA, and CDS-JNU. My interests include International Trade, Labour Economics, and Development Studies.
+                    </p>
+                    <p class="mt-4 text-gray-300 leading-relaxed">
+                        With peer-reviewed publications and experience supporting core economics teaching, I aim to contribute to data-driven, policy-relevant trade research. I am proficient in R, Python, and Stata for quantitative analysis.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="py-20">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-white">My <span class="accent-color">Experience</span></h2>
+            <div class="mt-12 max-w-3xl mx-auto">
+                <!-- Experience Item 1 -->
+                <div class="glassmorphism p-6 rounded-xl mb-8 relative border-l-4 border-sky-400">
+                    <h3 class="text-xl font-bold text-white">Academic Associate</h3>
+                    <p class="text-sky-400 font-medium">Indian Institute of Management Bangalore | Sep 2024 - Present</p>
+                    <ul class="mt-4 list-disc list-inside text-gray-400 space-y-2">
+                        <li>Supported core economics teaching for courses including Basic Microeconomics, Macro Economics, and Managerial Economics.</li>
+                        <li>Responsible for grading assignments, preparing course materials, and organizing seminars.</li>
+                        <li>Contributed to research under the supervision of Dr. Sanket Patel, Dr. Akhil Ilango, and Prof. Chetan Subramanian.</li>
+                    </ul>
+                </div>
+                <!-- Experience Item 2 -->
+                <div class="glassmorphism p-6 rounded-xl mb-8 relative border-l-4 border-sky-400">
+                    <h3 class="text-xl font-bold text-white">Research Assistant</h3>
+                    <p class="text-sky-400 font-medium">National Institute of Urban Affairs, Delhi (World Bank) | Jun 2024 - Aug 2024</p>
+                    <ul class="mt-4 list-disc list-inside text-gray-400 space-y-2">
+                        <li>Conducted field research and stakeholder interviews in Kerala's census towns to examine urbanisation patterns.</li>
+                        <li>Analysed census data, municipal budgets, and employment records to support economic assessments.</li>
+                        <li>Assisted in drafting policy briefs and reports presented to the World Bank.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-white">Featured <span class="accent-color">Work</span></h2>
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Card 1: Publication -->
+                <div class="glassmorphism rounded-xl overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 flex flex-col">
+                    <img src="https://placehold.co/600x400/1f2937/e0e7ff?text=Publication" alt="Publication" class="w-full h-48 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-white">From Margins to Mainstream: The Impact of the India Eco-Development Project</h3>
+                        <p class="mt-2 text-gray-400 flex-grow">Examines the impact of the Eco-development Project (IEDP) on the tribal communities in Kumily, Idukki.</p>
+                        <div class="mt-4">
+                            <a href="https://doi.org/10.2991/978-94-6463-766-35" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 font-medium">Read Publication</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Card 2: Master's Dissertation -->
+                <div class="glassmorphism rounded-xl overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 flex flex-col">
+                    <img src="https://placehold.co/600x400/1f2937/e0e7ff?text=Dissertation" alt="Master's Dissertation" class="w-full h-48 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-white">Need For Municipal Tax Reforms in Metropolitan Cities</h3>
+                        <p class="mt-2 text-gray-400 flex-grow">Master's Dissertation focusing on a case study of the Greater Hyderabad Municipal Corporation (GHMC).</p>
+                        <div class="mt-4">
+                            <a href="#" class="text-gray-500 font-medium cursor-not-allowed">Details Unavailable</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Card 3: Bachelor's Project -->
+                <div class="glassmorphism rounded-xl overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 flex flex-col">
+                    <img src="https://placehold.co/600x400/1f2937/e0e7ff?text=Project" alt="Bachelor's Project" class="w-full h-48 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-white">Financial Impact of Chit Funds During COVID-19</h3>
+                        <p class="mt-2 text-gray-400 flex-grow">Bachelor's project analyzing the financial impact of chit funds on investors during the pandemic.</p>
+                         <div class="mt-4">
+                            <a href="#" class="text-gray-500 font-medium cursor-not-allowed">Details Unavailable</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white">Get In <span class="accent-color">Touch</span></h2>
+            <p class="mt-4 max-w-xl mx-auto text-gray-400">
+                I'm currently open to new opportunities and collaborations. If you have a project in mind or just want to connect, feel free to reach out.
+            </p>
+            <div class="mt-8">
+                <a href="mailto:davisjalapat@gmail.com" class="btn-primary text-lg font-bold py-4 px-8 rounded-lg">
+                    Say Hello
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-800">
+        <div class="container mx-auto px-6 py-8 text-center text-gray-500">
+            <div class="flex justify-center space-x-6 mb-4">
+                <!-- Replace "#" with your actual social links -->
+                <a href="#" class="hover:text-sky-400 transition-colors duration-300">LinkedIn</a>
+                <a href="#" class="hover:text-sky-400 transition-colors duration-300">Google Scholar</a>
+                <a href="#" class="hover:text-sky-400 transition-colors duration-300">ResearchGate</a>
+            </div>
+            <p>&copy; 2024 Davis J Alappat. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileMenuLinks = mobileMenu.getElementsByTagName('a');
+        for (let link of mobileMenuLinks) {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        }
+    </script>
+
+</body>
+</html>
